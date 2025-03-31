@@ -44,11 +44,37 @@ npm-debug.log
 *.swo
 EOF
 
-.serverless/
 __pycache__/
 *.pyc
 node_modules/
 .mypy_cache
+
+# Python coverage
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# pytest
+.pytest_cache/
+
+# Distribution / packaging
+__pypackages__/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Local development settings
+.env.local
+.env.development.local
+
+# Logs
+logs/
+*.log
+
+# OS specific files
+.DS_Store
+Thumbs.db
 
 .methani-iam-user_accessKeys.csv
 .env
