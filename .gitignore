@@ -48,6 +48,7 @@ EOF
 __pycache__/
 *.pyc
 node_modules/
+.mypy_cache
 
 .methani-iam-user_accessKeys.csv
 .env
