@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# Serverless
+.serverless/
+
+# Environment variables
+.env
+
+# AWS
+.aws/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+EOF
+
+.serverless/
+__pycache__/
+*.pyc
+node_modules/
+
+.methani-iam-user_accessKeys.csv
+.env
+tests

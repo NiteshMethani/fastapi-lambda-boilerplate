@@ -1,0 +1,16 @@
+{
+  "name": "boilerplate-fastapi-lambda",
+  "version": "1.0.0",
+  "description": "This project provides a boilerplate for developing a FastAPI application and deploying it to AWS Lambda using the Serverless Framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-python-requirements": "^6.1.2"
+  }
+}

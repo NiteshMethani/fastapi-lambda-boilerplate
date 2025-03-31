@@ -1,0 +1,28 @@
+service: fastapi-lambda-app
+
+frameworkVersion: '3.40.0'
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: us-east-1
+  stage: ${opt:stage, 'dev'}
+  environment:
+    STAGE: ${self:provider.stage}
+
+functions:
+  api:
+    handler: app.main.handler
+    events:
+      - httpApi:
+          path: /api/{proxy+}
+          method: any
+
+plugins:
+  - serverless-python-requirements
+  - serverless-dotenv-plugin
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
+    slim: true
